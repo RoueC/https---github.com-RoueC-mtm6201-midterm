@@ -25,21 +25,254 @@ table {
 /* font-family: 'Karla', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif; */
+/* 
+Red - #a11212
+Light Gray  - #EDEBE8
+Orange -  #F7941D
+Black -  #231F20
+Olive Green -  #617040 */
 
+
+h1,
+h2,
+h3,
 html,
 body {
-margin: 0;
-border: 0;
+margin: auto;
 background-color:#EDEBE8;
 font-family: 'Roboto', sans-serif;
+line-height: 1;
+}
+
+
+.container {
+    display: block;
+    margin: auto;
+    padding: 0 3rem 0 3rem;
+    
+}
+
+.header1{
+    text-align: center;
+    padding: 20px;   
+} 
+
+.header2{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.flyer1, .flyer2{
+    justify-content: center;    
+    align-items: center;  
+    padding-left:115px;
+    font-size: 14px;
+    color:#a11212
+    
+}
+
+nav {
+
+    background-color: #617040;
+    padding-bottom: 4rem;
+    
+}
+
+ ul {
+    display: flex;  
+    justify-content: space-evenly;    
+}
+
+a {
+    text-decoration: none;
+    
+
 }
 
 img {
-float:left;
+    
+    float:left;
+    width: 170px;
+    margin-top: -25px;
+    margin-left: -20px;
+    margin-right: -20px;
+
+
 }
 
 nav button {
-     border-style: none;
+    border-style: none;
+    margin-top: 20px;
+    
+
 }
 
 
+nav input{
+    vertical-align: middle;
+    width: calc(70% - 60px - 24px);
+    height: calc(90px - 60px);
+    
+
+
+}
+
+/* ----- Banner ------- */
+
+.main-banner {
+    height: 400px;
+    width: 100%; 
+    background-image: url("../images/main-banner-859x644-mobile.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    display: block; 
+}
+
+.banner-text {
+    background-color: rgb(0,0,0,.4);
+    padding: 20px;
+    text-align: left;
+    top:70%;  
+}
+
+.banner-text p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    
+}   
+.banner-text .button-learn {
+    background-color: #c78c06;
+    border: none; 
+    color: black;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+/* ----- Hot Deals ------- */
+
+.deals {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+.deal1, .deal2, .deal3, .deal4 {
+    display: grid;
+    padding-bottom: 50px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* .button-shop {
+    border: 1px solid;
+ 
+} */
+
+.deal1-image, .deal2-image, .deal3-image, .deal4-image {
+   width:100%; 
+}
+
+.deal1-image:hover, .deal2-image:hover, .deal3-image:hover, .deal4-image:hover {
+    transform: scale(.9);
+}
+
+.button-shopall1, .button-shopall2 {
+    border: 1px solid;
+    text-align: center;
+}
+
+
+
+.button-shop:hover {
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+    0%, 100% {
+      box-shadow: 0 0 10px red;
+    }
+    50% {  
+      box-shadow: 0 0 80px darkred;
+    }
+  }
+
+
+/* ----- Shop by Category ------- */
+
+.category {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+   
+}
+
+.tools, .plumbing, .lighting, .paint {
+    display: grid;
+    padding-bottom: 50px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.tools-image, .plumbing-image, .lighting-image, .paint-image {
+    width: 100%;
+}
+
+.tools-image:hover, .plumbing-image:hover, .lighting-image:hover, .paint-image:hover {
+    transform: scale(.9);
+}
+
+/* ----- Email Sign-up ------- */
+
+.sign-up {
+  background-color: #a11212;
+  color: whitesmoke;
+  margin-top: 20px;
+  padding: 20px 0;
+
+}
+
+.sign-up-text, .sign-up-text input {
+    text-align: center;
+}
+
+
+/* ----- Connect ------- */
+
+.stay-connected {
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.socials {
+    
+    padding: 0 0 15px 10px;
+}
+
+.need-help {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.need-help a {
+    padding: 10px 0;
+    border: 1px solid  #a11212;
+    margin-bottom: 5px;
+
+}
+
+/* ----- Footer ------- */
+
+footer {
+    padding: 10px 10px;
+
+}

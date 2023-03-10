@@ -21,37 +21,53 @@
 <body>
 
     <Header>
-        <nav>  
-            <img src="images/logo-small-200_x_200.png" alt="Touchstone Logo">
-            <input type=text placeholder="Search" class="search">
-            <button> <i class="fa fa-search"></i> </button> 
-            <button> <i class="fa fa-user"></i> </button> 
-            <button> <i class="fa fa-cart-plus"></i> </button> 
+        <div class="flyer1">
+         <p>FREE Shipping on all orders above $50. Hurry!</p>
+        </div>
 
+        <nav>  
+            <a href="index.html"><img src="images/logo-small-200_x_200.png" alt="Touchstone Logo"></a> 
             <ul> 
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href=contact.html>Contact</a></li>        
             </ul>       
-        </nav>
+            <input type=text placeholder="Search" class="search">
+            <div class="fa fa-search"></div>
+            <div class="fa fa-user"></div>
+            <div class="fa fa-cart-plus"></div>
+        </nav>   
+        
+        <div class="flyer2">
+            <p>Sign-up to get deals on the upcoming Sale!</p>
+           </div>
+
     </Header>
 
 <main>
     <section class="main-banner">
-        <p>FREE Shipping on all orders above $50. Hurry! </p>
-        <a href="contact.html" class="button">Learn More</a>
+
+        <div class="banner-text">
+        <p>Hardware need not be hard </p>
+        <a href="contact.html" class="button-learn">Learn More</a>
+        </div>
+
     </section>
 
+    <div class="container">
+     <h1 class="header1">HOT DEALS</h1>
     <section class="deals">
-        <h1>HOT DEALS</h1>
-
+     
             <div class="deal1">
                 <picture>
                     <source srcset="images/deal1-500x500-mobile.jpg" media="(max-width:720px)"/>
                     <img src="images/deal1-800x700-desktop.jpg" alt="person holding red balloon" class="deal1-image">
                 </picture>
-                <p>30-50% off selected items!</p>
-                <a href="#" class="button">Shop Now</a> 
+                
+                <div class="deal1-text">
+                    <p>30-50% off selected items!</p>
+                    <a href="#" class="button-shop">Shop Now</a> 
+                </div>
             </div>
 
             <div class="deal2">
@@ -59,8 +75,11 @@
                     <source srcset="images/deal2-500x500-mobile.jpg" media="(max-width:720px)"/>
                     <img src="images/deal2-800x700-desktop.jpg" alt="black and red sales tag" class="deal2-image">
                 </picture>
-                <p>Up to 70% off on holiday deals</p>
-                <a href="#" class="button">Shop Now</a> 
+                
+                <div class="deal2-text">
+                    <p>Up to 70% off on holiday deals</p>
+                    <a href="#" class="button-shop">Shop Now</a> 
+                </div>
             </div>
 
             <div class="deal3">
@@ -68,8 +87,11 @@
                     <source srcset="images/deal3-500x500-mobile.jpg" media="(max-width:720px)"/>
                     <img src="images/deal3-800x700-desktop.jpg" alt="silver bolt and nut" class="deal3-image">
                 </picture>
-                <p>Giveaway</p>
-                <a href="#" class="button">Shop Now</a> 
+
+                <div class="deal3-text">
+                    <p>Nuts and Botls Giveaway</p>
+                    <a href="#" class="button-shop">Shop Now</a> 
+                </div>
             </div>
 
             <div class="deal4">
@@ -77,24 +99,33 @@
                     <source srcset="images/deal4-500x500-mobile.jpg" media="(max-width:720px)"/>
                     <img src="images/deal4-800x700-desktop.jpg" alt="yellow drill" class="deal4-image">
                 </picture>
-                <p>Big discounts on power tools</p>
-                <a href="#" class="button">Shop Now</a> 
-            </div>
-    
-            <a href="#" class="button1">Shop All Deals</a> 
+                
+                <div class="deal4-text">
+                    <p>Big discounts on power tools</p>
+                    <a href="#" class="button-shop">Shop Now</a> 
+                </div>
+
+            </div>        
     </section>
+            
+            <div class="button-shopall1">
+                <a href="#">Shop All Deals</a> 
+            </div>
 
-
+        <h1 class="header2">SHOP BY CATEGORY</h1>
     <section class="category">
-        <h1>SHOP BY CATEGORY</h1>
-
+        
             <div class="tools">
                 <picture>
                     <source srcset="images/tools-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/tools-800x700-desktop.jpg" alt="mutiple hardware tools" class="tool-image">
+                    <img src="images/tools-800x700-desktop.jpg" alt="mutiple hardware tools" class="tools-image">
                 </picture>
-                <p>TOOLS</p>
-                <a href="#" class="button">Shop Now</a> 
+               
+               
+                <div class="tools-text">
+                    <p>TOOLS</p>
+                    <a href="#" class="button-shop">Shop Now</a> 
+                </div>
             </div>
 
             <div class="plumbing">
@@ -102,8 +133,11 @@
                     <source srcset="images/plumbing-500x500-mobile.jpg" media="(max-width:720px)"/>
                     <img src="images/plumbing-800x700-desktop.jpg" alt="water pipes" class="plumbing-image">
                 </picture>
-                <p>PLUMBING</p>
-                <a href="#" class="button">Shop Now</a> 
+                
+                <div class="plumbing-text">
+                    <p>PLUMBING</p>
+                    <a href="#" class="button-shop">Shop Now</a> 
+                 </div>
             </div>
 
             <div class="lighting">
@@ -111,8 +145,11 @@
                     <source srcset="images/lighting-500x500-mobile.jpg" media="(max-width:720px)"/>
                     <img src="images/lighting-800x700-desktop.jpg" alt="light bulbs" class="lighting-image">
                 </picture>
-                <p>LIGHTING</p>
-                <a href="#" class="button">Shop Now</a> 
+
+                <div class="lighting-text">
+                    <p>LIGHTING</p>
+                    <a href="#" class="button-shop">Shop Now</a> 
+                </div>
             </div>
 
             <div class="paint">
@@ -120,32 +157,42 @@
                     <source srcset="images/paint-500x500-mobile.jpg" media="(max-width:720px)"/>
                     <img src="images/paint-800x700-desktop.jpg" alt="coloful paint" class="paint-image">
                 </picture>
-                <p>PAINT</p>
-                <a href="#" class="button">Shop Now</a> 
+                
+                <div class="painting-text">
+                    <p>PAINT</p>
+                    <a href="#" class="button-shop">Shop Now</a> 
+                </div>
             </div>
-
-            <a href="#" class="button1">Shop All Categories</a> 
     </section>
 
+            <div class="button-shopall2">
+                <a href="#">Shop All Categories</a> 
+            </div>
+    </div>
 
     <section class="sign-up">
-        <p>Join now and enjoy exclusive offers, tips and more.</p>
-        <input type=text placeholder="email" class="email">
-        <button type="submit" class="signupbtn">Sign Up</button>
+        <div class="sign-up-text">
+            <p>Join now and enjoy exclusive offers, tips and more.</p>
+            <input type=text placeholder="email" class="email">
+            <button type="submit" class="button-sign">Sign Up</button>
+        </div>
     </section>
 
 
     <section class="connect">
         <div class="stay-connected">
             <p>Stay Connected</p>
-            <button> <i class="fa fa-facebook-square"></i> </button> 
-            <button> <i class="fa fa-google-plus-square"></i> </button> 
-            <button> <i class="fa fa-twitter-square"></i> </button> 
             <p>1-800-000-000</p>
         </div>
 
+        <div class="socials">
+            <button> <i class="fa fa-facebook-square"></i> </button> 
+            <button> <i class="fa fa-google-plus-square"></i> </button> 
+            <button> <i class="fa fa-twitter-square"></i> </button> 
+        </div>
+
         <div class="need-help">
-            <a href="#">Customer Service</a> 
+            <a href="index.html">Customer Service</a> 
             <a href="contact.html">Contact Us</a> 
             <a href="about.html">About Us</a>  
         </div>
@@ -155,7 +202,7 @@
 <footer> 
         <p>&copy; Copyright Touchstone Hardware, 2022 </p>
         <p>All images are taken from <a href=https://www.pexels.com>Pexels</a></p> 
-        </footer> 
+         
 </footer>
     
 </body>
