@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!--Icon Stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Custom  Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Touchstone</title>
+</head>
+
+
+<body>
+
+    <Header>
+        <nav>  
+            <img src="images/logo-small-200_x_200.png" alt="Touchstone Logo">
+            <input type=text placeholder="Search" class="search">
+            <button> <i class="fa fa-search"></i> </button> 
+            <button> <i class="fa fa-user"></i> </button> 
+            <button> <i class="fa fa-cart-plus"></i> </button> 
+    
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href=contact.html>Contact</a></li>        
+            </ul>       
+        </nav>
+    </Header>
+    
+ <main>
+
+    <section class="contact-us">
+        <h1>Contact Us</h1>
+        <h3>Call Center Hotline: 1-800-000-000</h3>
+        <ul>
+            <li>Mon-Fri: 7am to 10pm (CT)</li>
+            <li>Sat-Sun: 7am to 7pm (CT) </li>
+        </ul>
+
+        <h3>Customer Service Request</h3>
+
+        <form action="Thanks.html" method="POST">
+            <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+
+          <label for="order">Order #</label>
+          <input type="text" id="order" name="order" placeholder="Order #">
+
+          <label for="textbox">Message</label>
+          <textarea id="textbox"></textarea>
+          
+          <button type="submit" role="button">Send</button>
+        </form>
+    </section>
+
+    <section class="Store Locator">
+
+        <input type=text placeholder="Search" class="search">
+        <button type="submit" class="submit">Find</button>
+
+        <div class="store-location">
+            <ul itemscope itemtype="https://schema.org/localBusiness" class="store-1">
+                <li itemprop="name">Store - 1</li>
+                <li itemprop="streetAddress">Address:01- 234 St, Center Rd, ON</li>
+                <li itemprop="phone">Phone: 6613- 123 -4567</li>
+            </ul>
+
+            <ul itemscope itemtype="https://schema.org/localBusiness" class="store-2">
+                <li itemprop="name">Store - 2</li>
+                <li itemprop="streetAddress">Address: 01- 567 St, Middle Rd, ON</li>
+                <li itemprop="phone">Phone: 6613- 123 -4567</li>
+            </ul>
+
+            <ul itemscope itemtype="https://schema.org/localBusiness" class="store-3">
+                <li itemprop="name">Store - 3</li>
+                <li itemprop="streetAddress">Address: 01- 891 St, North Rd, ON</li>
+                <li itemprop="phone">Phone: 6613- 123 -4567</li>
+            </ul>
+
+            <ul itemscope itemtype="https://schema.org/localBusiness" class="store-4">
+                <li itemprop="name">Store - 4</li>
+                <li itemprop="streetAddress">Address: 01- 011 St, South Rd, ON</li>
+                <li itemprop="phone">Phone: 6613- 123 -4567</li>
+            </ul>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567606!2d-75.75712548449421!3d45.34992777909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231253704!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+
+    <section class="sign-up">
+        <p>Join now and enjoy exclusive offers, tips and more.</p>
+        <input type=text placeholder="email" class="email">
+        <button type="submit" class="signupbtn">Sign Up</button>
+    </section>
+
+
+    <section class="connect">
+        <div class="stay-connected">
+            <p>Stay Connected</p>
+            <button> <i class="fa fa-facebook-square"></i> </button> 
+            <button> <i class="fa fa-google-plus-square"></i> </button> 
+            <button> <i class="fa fa-twitter-square"></i> </button> 
+            <p>1-800-000-000</p>
+        </div>
+
+        <div class="need-help">
+            <a href="#">Customer Service</a> 
+            <a href="contact.html">Contact Us</a> 
+            <a href="about.html">About Us</a>  
+        </div>
+    </section>
+
+  </main>
+
+    <footer> 
+        <p>&copy; Copyright Touchstone Hardware, 2022 </p>
+        <p>All images are taken from <a href=https://www.pexels.com>Pexels</a></p> 
+     </footer> 
+
+
+</body>
+</html>
