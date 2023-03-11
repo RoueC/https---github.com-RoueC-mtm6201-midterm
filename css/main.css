@@ -57,9 +57,9 @@ line-height: 1;
 }
 
 
-/******************************** 
------------ MOBILE -----------
-********************************/
+/**************************************************************** 
+---------------------- MOBILE ----------------------
+**************************************************************** /
 
 
 /* ------------------------------ MOBILE (HOME) ------------------------------ */
@@ -140,7 +140,7 @@ nav input{
     font-family: 'Montserrat', sans-serif;
     
 }   
-.banner-text .button-learn {
+ .button-learn {
     background-color: #c78c06;
     border: none; 
     color: black;
@@ -149,14 +149,14 @@ nav input{
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
+    border-radius: 4px;
 }
 
-
-/* ----- Header Title ------- */
+/* ----- Header Title (Shop By Category/Hot Deals) ------- */
 
 .header1, .header2{
     text-align: center;
-    padding: 30px;   
+    padding: 50px 0 40px 0;   
 }
 
 /* ----- Hot Deals ------- */
@@ -175,11 +175,6 @@ nav input{
     font-weight: bold;
 }
 
-/* .button-shop {
-    border: 1px solid;
- 
-} */
-
 .deal1-image, .deal2-image, .deal3-image, .deal4-image {
    width:100%; 
 }
@@ -188,20 +183,30 @@ nav input{
     transform: scale(.9);
 }
 
+/* ----- Shop Now/Shop All Buttons ------- */
+
 .button-shopall1, .button-shopall2 {
-    border: 1px solid;
+    border: 1px solid ;
+    font-size: 13px;
+    color:#a11212;
+ 
+    font-weight: bold;
     text-align: center;
     text-decoration:none;
+    padding: 5px;
+    border-radius: 4px;
+    
 }
-
 
 .button-shop {
     text-decoration: none;
-
+    border-radius: 3px;
+    color: #a11212;
+    border: 1px solid;
+    padding: 4px;
 }
 
-
-.button-shop:hover {
+.button-shop:hover, .button-shopall1:hover, .button-shopall2:hover {
     animation: glowing 2s infinite;
 }
 
@@ -218,7 +223,7 @@ nav input{
 /* ----- Shop by Category ------- */
 
 .category {
-    padding-top: 20px;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 1rem;
@@ -246,13 +251,26 @@ nav input{
 .sign-up {
   background-color: #a11212;
   color: whitesmoke;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 20px 0;
 
 }
 
 .sign-up-text, .sign-up-text input {
     text-align: center;
+}
+
+.sign-up-text input, .button-sign {
+    border:none;
+    
+}
+
+.sign-up-text input {
+    width: 40%;
+}
+
+.button-sign {
+background-color: #c78c06;
 }
 
 
@@ -290,9 +308,9 @@ footer {
 }
 
 
-/******************************** 
------------ DESKTOP -----------
-********************************/
+/**************************************************************** 
+---------------------- DESKTOP ----------------------
+*****************************************************************/
 
 /* ------------------------------ DESKTOP (Home) ------------------------------ */
 
@@ -302,6 +320,101 @@ nav {
     display: flex;
 
 }
+
+
+
+
+
+
+
+
+/* ----- Banner ------- */
+
+.main-banner {
+    height: 600px;
+    width: 100%; 
+    background-image: url("../images/main-banner-1500_x_900.jpeg");
+}
+
+.banner-text {
+    padding: 30px;   
+}
+
+.banner-text p {
+    font-size: 60px;
+    margin-bottom: 10px;
+
+    
+}   
+ .button-learn { 
+    padding: 12px 20px;
+    font-size: 20px;
+}
+
+/* ----- Header Title (Shop By Category/Hot Deals) ------- */
+
+.header1, .header2{
+    font-size:40px;
+    padding: 40px;   
+}
+
+/* ----- Hot Deals ------- */
+
+.deals {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.deal1, .deal2, .deal3, .deal4 {
+    font-size: 15px;
+}
+
+
+/* ----- Shop Now/Shop All Buttons ------- */
+
+.button-shopall1, .button-shopall2 {
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+
+/* ----- Shop by Category ------- */
+
+.category {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.tools, .plumbing, .lighting, .paint {
+    font-size: 15px;
+
+}
+
+
+/* ----- Email Sign-up ------- */
+
+  
+.sign-up-text {
+    text-align: center;
+    font-size: 20px;
+}
+  
+.sign-up-text input{
+    font-size: 16px;
+    width: 30%;
+}
+
+.button-sign {
+    padding: 3px;
+   
+
+}
+
 
 
 
