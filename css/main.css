@@ -45,77 +45,75 @@ line-height: 1;
 }
 
 
-.container {
+.main-container {
     display: block;
-    margin: auto;
-    padding: 0 3rem 0 3rem;
-    
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.header1{
-    text-align: center;
-    padding: 20px;   
-} 
-
-.header2{
-    padding: 30px 0;
-    text-align: center;
+.container {
+    padding: 0 3rem 0 3rem;   
 }
+
+
+/******************************** 
+----------- MOBILE -----------
+********************************/
+
+
+/* ------------------------------ MOBILE (HOME) ------------------------------ */
 
 .flyer1, .flyer2{
-    justify-content: center;    
-    align-items: center;  
-    padding-left:115px;
+    text-align: center;
     font-size: 14px;
-    color:#a11212
-    
+    font-weight:bold;
+    color:#a11212    
 }
 
 nav {
-
+    border: 1px solid;
     background-color: #617040;
-    padding-bottom: 4rem;
-    
+    padding-bottom: 2rem;    
 }
 
- ul {
+ ul {  
+    border: 1px solid;
     display: flex;  
-    justify-content: space-evenly;    
+    float: left;  
+    gap: 3rem;
+    padding-left:0;
+    width: 50%;       
 }
 
-a {
-    text-decoration: none;
-    
-
+li a {
+    text-decoration: none;  
+    font-size: 17px;
+    color: whitesmoke; 
 }
 
-img {
-    
+nav img {    
+    border: 1px solid;
     float:left;
-    width: 170px;
-    margin-top: -25px;
-    margin-left: -20px;
-    margin-right: -20px;
-
-
+    width: 100px;
+    height: 100px;
+    /* margin-top: -25px; */
+    margin-left: -15px; 
+    /* margin-right: -20px;  */
 }
 
-nav button {
-    border-style: none;
-    margin-top: 20px;
-    
-
-}
-
-
-nav input{
+nav input{   
     vertical-align: middle;
-    width: calc(70% - 60px - 24px);
-    height: calc(90px - 60px);
-    
-
-
+    width: calc(60% - 60px - 24px);
+    height: calc(100px - 60px);
 }
+
+.fa-search, .fa-user, .fa-cart-plus {
+    font-size: 25px;
+    color:#c78c06;
+    padding: 4px;
+}
+
 
 /* ----- Banner ------- */
 
@@ -153,6 +151,14 @@ nav input{
     font-size: 15px;
 }
 
+
+/* ----- Header Title ------- */
+
+.header1, .header2{
+    text-align: center;
+    padding: 30px;   
+}
+
 /* ----- Hot Deals ------- */
 
 .deals {
@@ -185,8 +191,14 @@ nav input{
 .button-shopall1, .button-shopall2 {
     border: 1px solid;
     text-align: center;
+    text-decoration:none;
 }
 
+
+.button-shop {
+    text-decoration: none;
+
+}
 
 
 .button-shop:hover {
@@ -244,7 +256,7 @@ nav input{
 }
 
 
-/* ----- Connect ------- */
+/* ----- Connect  ------- */
 
 .stay-connected {
     display:flex;
@@ -274,5 +286,24 @@ nav input{
 
 footer {
     padding: 10px 10px;
+
+}
+
+
+/******************************** 
+----------- DESKTOP -----------
+********************************/
+
+/* ------------------------------ DESKTOP (Home) ------------------------------ */
+
+@media screen and (min-width:720px) { 
+
+nav {
+    display: flex;
+
+}
+
+
+
 
 }
