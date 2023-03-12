@@ -55,71 +55,92 @@
 
         <div class="contact">
             <h1>Contact Us</h1>
-            <h3>Call Center Hotline: 1-800-000-000</h3>
+            <p class="hotline">Call Center Hotline: 1-800-000-000</p>
+            <p class="hoo">Hours of Operation</p>
             <ul>
                 <li>Mon-Fri: 7am to 10pm (CT)</li>
                 <li>Sat-Sun: 7am to 7pm (CT) </li>
-            </ul>
+            </ul> 
         </div>
 
         <div class="csr-form">  
             <h3>Customer Service Request</h3>
 
             <form action="Thanks.html" method="POST">
+
+                <div class="name">
                 <label for="fullname">Full Name</label>
                 <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                </div>
 
+                <div class="email">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Email">
+                </div>
 
+                <div class="order">
                 <label for="order">Order #</label>
                 <input type="text" id="order" name="order" placeholder="Order #">
+                </div>
 
+                <div class="message">
                 <label for="textbox">Message</label>
                 <textarea id="textbox"></textarea>
+                </div>
                 
                 <button type="submit" role="button">Send</button>
             </form>
         </div>  
     </section>
 
-    <section class="Store Locator">
+   
+    <section class="store-locator">
 
+        <div class="store-locator-container">
+        <p>Store Locator</p>
         <input type=text placeholder="Search" class="search">
         <button type="submit" class="submit">Find</button>
 
         <div class="store-location">
-            <ul itemscope itemtype="https://schema.org/localBusiness" class="store-1">
-                <li itemprop="name">Store - 1</li>
+            <ul itemscope itemtype="https://schema.org/localBusiness">
+                <li itemprop="name"class="store-1">Store - 1</li>
                 <li itemprop="streetAddress">Address:01- 234 St, Center Rd, ON</li>
                 <li itemprop="phone">Phone: 6613- 123 -4567</li>
             </ul>
 
-            <ul itemscope itemtype="https://schema.org/localBusiness" class="store-2">
-                <li itemprop="name">Store - 2</li>
+            <ul itemscope itemtype="https://schema.org/localBusiness" >
+                <li itemprop="name"class="store-2">Store - 2</li>
                 <li itemprop="streetAddress">Address: 01- 567 St, Middle Rd, ON</li>
                 <li itemprop="phone">Phone: 6613- 123 -4567</li>
             </ul>
 
-            <ul itemscope itemtype="https://schema.org/localBusiness" class="store-3">
-                <li itemprop="name">Store - 3</li>
+            <ul itemscope itemtype="https://schema.org/localBusiness">
+                <li itemprop="name"class="store-3">Store - 3</li>
                 <li itemprop="streetAddress">Address: 01- 891 St, North Rd, ON</li>
                 <li itemprop="phone">Phone: 6613- 123 -4567</li>
             </ul>
 
-            <ul itemscope itemtype="https://schema.org/localBusiness" class="store-4">
-                <li itemprop="name">Store - 4</li>
+            <ul itemscope itemtype="https://schema.org/localBusiness">
+                <li itemprop="name" class="store-4">Store - 4</li>
                 <li itemprop="streetAddress">Address: 01- 011 St, South Rd, ON</li>
                 <li itemprop="phone">Phone: 6613- 123 -4567</li>
             </ul>
+
+            <ul itemscope itemtype="https://schema.org/localBusiness">
+                <li itemprop="name" class="store-5">Store - 5</li>
+                <li itemprop="streetAddress">Address: 01- 121 St, East Rd, ON</li>
+                <li itemprop="phone">Phone: 6613- 123 -4567</li>
+            </ul>
         </div>
+    </div>
 
         <div class="map">
+            <p>Map</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567606!2d-75.75712548449421!3d45.34992777909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231253704!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </section>
-
+    </div>
 
     <section class="sign-up">
         <div class="sign-up-text">
@@ -150,7 +171,7 @@
             </div>
         </div>      
     </section>
-    </div>
+   
 
 </main>
 
@@ -160,7 +181,6 @@
         <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p> 
          
 </footer>
-
 </div>
 </body>
 </html>
