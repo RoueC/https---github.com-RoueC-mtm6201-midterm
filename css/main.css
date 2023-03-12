@@ -461,18 +461,6 @@ nav input{
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----- Banner ------- */
 
 .main-banner {
@@ -598,4 +586,29 @@ nav input{
 }
 
 
+/* ------------------------------ DESKTOP (About) ------------------------------ */
+
+
+.about-banner {
+    height: 400px;
+    width: 100%; 
+    background-image: url("../images/about-774x516-mobile.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    display: block; 
 }
+
+
+.about-text {
+    text-align: center;
+    
+      
+}
+
+}
+
+
+
+
+
+
