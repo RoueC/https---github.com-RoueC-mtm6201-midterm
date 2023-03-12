@@ -22,49 +22,65 @@
 
 <body>
 
-    <Header>
-        <nav>  
-            <a href="index.html"><img src="images/logo-small-200_x_200.png" alt="Touchstone Logo"></a>
-            <input type=text placeholder="Search" class="search">
-            <button> <i class="fa fa-search"></i> </button> 
-            <button> <i class="fa fa-user"></i> </button> 
-            <button> <i class="fa fa-cart-plus"></i> </button> 
+    <div class="main-container">
+
+        <Header>
+            <div class="flyer1">
+             <p>FREE Shipping on all orders above $50. Hurry!</p>
+            </div>
     
-            <ul> 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href=contact.html>Contact</a></li>        
-            </ul>       
-        </nav>
-    </Header>
+            <nav>  
+                <a href="index.html"><img src="images/logo-small.png" alt="Touchstone Logo"></a> 
+                <ul> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href=contact.html>Contact</a></li>        
+                </ul>       
+                <input type=text placeholder="Search" class="search"> 
+                <i class="fa fa-search"></i>
+                <i class="fa fa-user"></i> 
+                <i class="fa fa-cart-plus"></i>
+            </nav>   
+       
+            <div class="flyer2">
+                <p>Sign-up to get deals on the upcoming Sale!</p>
+            </div>
+       
+        </Header>
     
  <main>
 
+    <div class="container">  
     <section class="contact-us">
-        <h1>Contact Us</h1>
-        <h3>Call Center Hotline: 1-800-000-000</h3>
-        <ul>
-            <li>Mon-Fri: 7am to 10pm (CT)</li>
-            <li>Sat-Sun: 7am to 7pm (CT) </li>
-        </ul>
 
-        <h3>Customer Service Request</h3>
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <h3>Call Center Hotline: 1-800-000-000</h3>
+            <ul>
+                <li>Mon-Fri: 7am to 10pm (CT)</li>
+                <li>Sat-Sun: 7am to 7pm (CT) </li>
+            </ul>
+        </div>
 
-        <form action="Thanks.html" method="POST">
-            <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+        <div class="csr-form">  
+            <h3>Customer Service Request</h3>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email">
+            <form action="Thanks.html" method="POST">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name">
 
-          <label for="order">Order #</label>
-          <input type="text" id="order" name="order" placeholder="Order #">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
 
-          <label for="textbox">Message</label>
-          <textarea id="textbox"></textarea>
-          
-          <button type="submit" role="button">Send</button>
-        </form>
+                <label for="order">Order #</label>
+                <input type="text" id="order" name="order" placeholder="Order #">
+
+                <label for="textbox">Message</label>
+                <textarea id="textbox"></textarea>
+                
+                <button type="submit" role="button">Send</button>
+            </form>
+        </div>  
     </section>
 
     <section class="Store Locator">
@@ -106,35 +122,45 @@
 
 
     <section class="sign-up">
-        <p>Join now and enjoy exclusive offers, tips and more.</p>
-        <input type=text placeholder="email" class="email">
-        <button type="submit" class="signupbtn">Sign Up</button>
+        <div class="sign-up-text">
+            <p>Join now and enjoy exclusive offers, tips and more.</p>
+            <input type=text placeholder="email" class="email">
+            <button type="submit" class="button-sign">Sign Up</button>
+        </div>
     </section>
 
 
-    <section class="connect">
+    <section class="connect">     
         <div class="stay-connected">
             <p>Stay Connected</p>
-            <button> <i class="fa fa-facebook-square"></i> </button> 
-            <button> <i class="fa fa-google-plus-square"></i> </button> 
-            <button> <i class="fa fa-twitter-square"></i> </button> 
-            <p>1-800-000-000</p>
-        </div>
+            <p>Need Help? 1-800-000-000</p>  
+        </div>   
+        
+        <div class="help-socials-container">
+            <div class="socials">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> 
+                <a href="https://www.plus.google.com/"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+            </div>
 
-        <div class="need-help">
-            <a href="#">Customer Service</a> 
-            <a href="contact.html">Contact Us</a> 
-            <a href="about.html">About Us</a>  
-        </div>
+            <div class="need-help">
+                <a href="index.html">Customer Service</a> 
+                <a href="contact.html">Contact Us</a> 
+                <a href="about.html">About Us</a>  
+            </div>
+        </div>      
     </section>
+    </div>
 
-  </main>
-
-    <footer> 
-        <p>&copy; Copyright Touchstone Hardware, 2022 </p>
-        <p>All images are taken from <a href=https://www.pexels.com>Pexels</a></p> 
-     </footer> 
+</main>
 
 
+<footer> 
+        <p>&copy; Copyright Touchstone Hardware, 2022.</p>
+        <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p> 
+         
+</footer>
+
+</div>
 </body>
 </html>

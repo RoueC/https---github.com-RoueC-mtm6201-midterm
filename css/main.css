@@ -41,15 +41,15 @@ body {
 margin: auto;
 background-color:#EDEBE8;
 font-family: 'Roboto', sans-serif;
-line-height: 1;
 }
 
 
 .main-container {
     display: block;
-    /* width: 100%; */
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    line-height: 1.2;
 }
 
 .container {
@@ -80,7 +80,7 @@ nav {
     padding-bottom: 1rem;  
 }
 
- ul {  
+ nav ul {  
     border: 1px solid;
     display: flex;  
     float: left;  
@@ -243,8 +243,7 @@ nav input{
     padding-top: 30px;
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 1rem;
-   
+    gap: 1rem;   
 }
 
 .tools, .plumbing, .lighting, .paint {
@@ -253,7 +252,6 @@ nav input{
     font-size: 13px;
     font-weight: bold;
 }
-
 
 .tools-image, .plumbing-image, .lighting-image, .paint-image {
     width: 100%;
@@ -287,7 +285,7 @@ nav input{
 }
 
 .button-sign {
-background-color: #c78c06;
+    background-color: #c78c06;
 }
 
 
@@ -296,14 +294,13 @@ background-color: #c78c06;
 .stay-connected {
     display:flex;
     justify-content: space-between;
-    padding: 5px 10px;
+    padding: 0 10px;
     font-size: 15px;
     font-weight: bold;
-
 }
 
 .socials {
-    padding: 0 0 15px 10px;
+    padding-left:10px;
 }
 
 .socials .fa{
@@ -339,7 +336,6 @@ background-color: #c78c06;
 }
 
 .need-help a {
-    padding: 10px 5px;
     border: 1px solid  #a11212;
     margin-bottom: 5px;
     text-decoration: none;
@@ -354,13 +350,100 @@ background-color: #c78c06;
 footer {
    display: flex;
    justify-content: center;
-   padding: 10px 10px;
+   padding: 5px 10px;
    font: 14px 'Karla', sans-serif;
 }
 
 footer p {
     padding-right: 5px;
 }
+
+/* ------------------------------ Mobile (About) ------------------------------ */
+
+.about-banner {
+    height: 400px;
+    width: 100%; 
+    background-image: url("../images/about-774x516-mobile.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    display: block; 
+}
+
+.about-banner-text {
+    text-align: left;
+    background-color: rgb(0,0,0,.4);
+    padding: 20px;
+    top:70%;   
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.about {
+    font-size: 15px;
+    padding-top: 20px;
+}
+ 
+.about h3{
+    font-size: 20px;
+}
+
+.story {
+    padding-bottom: 40px;
+}
+
+.william, .larissa, .kelly, .emil {
+    padding-bottom: 20px;   
+
+}
+.william-font, .larissa-font, .kelly-font, .emil-font {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.our-team h3 {
+    padding: 20px 0;
+}
+
+.about h3, .about h2 {
+    color:#a11212;
+
+}
+
+.our-team .button {
+    text-decoration: none;
+    color:#a11212;
+    border: 1px solid;
+    padding: 2px 4px;
+}
+
+.william-image, .larissa-image, .kelly-image, .emil-image {
+    width:100%;
+}
+
+
+.william-image:hover, .larissa-image:hover, .kelly-image:hover, .emil-image:hover {
+    transform: scale(.9);
+}
+
+
+.our-team {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 20px;
+}
+
+
+/* ------------------------------ Mobile (Contact) ------------------------------ */
+
+.contact {
+    padding:30px 0;
+    border: 1px solid;
+}
+
+
 
 
 /**************************************************************** 
@@ -369,7 +452,7 @@ footer p {
 
 
 
-/* ------------------------------ DESKTOP (Home) ------------------------------ */
+/* ------------------------------ Large Screen (Home) ------------------------------ */
 
 @media screen and (min-width:720px) { 
 
@@ -586,24 +669,49 @@ nav input{
 }
 
 
-/* ------------------------------ DESKTOP (About) ------------------------------ */
+
+/* ------------------------------ Large Screen (About) ------------------------------ */
 
 
 .about-banner {
-    height: 400px;
+    height: 500px;
     width: 100%; 
-    background-image: url("../images/about-774x516-mobile.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;   
-    display: block; 
+    background-image: url("../images/about-desktop-1500_x_900.jpeg");
 }
 
-
-.about-text {
+.about-banner-text {
     text-align: center;
-    
-      
+    font-size: 60px;
 }
+
+.about {
+    font-size: 16px;
+    padding-top: 20px;
+}
+ 
+.about h3{
+    font-size: 21px;
+}
+
+.william, .larissa, .kelly, .emil {
+    padding-bottom: 20px;   
+
+}
+.william-font, .larissa-font, .kelly-font, .emil-font {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.our-team {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 1rem;
+    padding-top: 20px;
+}
+
+
+
+
 
 }
 
