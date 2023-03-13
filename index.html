@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&family=Montserrat:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
     <!--Icon Stylesheet-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--Custom  Stylesheet -->
@@ -21,13 +20,20 @@
 </head>
 <body>
 
+<div class="container" id="top">  
+    <div class="skip">
+        <a href="#nav">Skip to navigation</a>
+        <a href="#main">Skip to main content</a>
+    </div>
+</div>
+
 <div class="main-container">
     <Header role="banner"> 
         <div class="flyer1">
          <p>FREE Shipping on all orders above $50. Hurry!</p>
         </div>
 
-        <nav role="navigation">  
+        <nav role="navigation" id="nav">  
            <a href="index.html"><img src="images/logo-small-130_x_130.png" alt="Touchstone Logo"></a> 
             <ul> 
                 <li><a href="index.html">Home</a></li>
@@ -45,7 +51,7 @@
         </div>
     </Header>
 
-<main role="main">
+<main role="main" id=main>
     <section class="main-banner">
         <div class="banner-text">
         <p>Hardware need not be hard </p>
@@ -107,7 +113,7 @@
             </div>        
         </section>
  
-                <a href="#" class="button-shopall1" role="link">Shop All Deals</a> 
+                <!-- <a href="#" class="button-shopall1" role="link">Shop All Deals</a>  -->
           
 
                 <h1 class="header2" role="heading">SHOP BY CATEGORY</h1>
@@ -161,10 +167,16 @@
             </div>
         </div>
     </section>
-                <a href="#" class="button-shopall2" role="link">Shop All Categories</a> 
             
+            <!-- <a href="#" class="button-shopall2" role="link">Shop All Categories</a>        -->
     </div>
 
+
+    <aside class="return-to-top" role="complementary">
+        <a href="#top" role="link"><i class="fa fa-angle-double-up"></i></a>     
+    </aside>
+
+    
     <aside class="sign-up" role="complementary">
         <div class="sign-up-text">
             <p>Join now and enjoy exclusive offers, tips and more.</p>
@@ -188,7 +200,7 @@
             </div>
 
             <div class="need-help">
-                <a href="index.html" role="link">Customer Service</a> 
+                <a href="contact.html" role="link">Customer Service</a> 
                 <a href="contact.html" role="link">Contact Us</a> 
                 <a href="about.html" role="link">About Us</a>  
             </div>
@@ -197,7 +209,7 @@
 </main>
 
 
-<footer role="contentinfo"> 
+<footer role="contentinfo" id="footer"> 
         <p>&copy; Copyright Touchstone Hardware, 2022.</p>
         <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p> 
          

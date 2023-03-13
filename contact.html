@@ -22,33 +22,38 @@
 
 <body>
 
-    <div class="main-container">
-
-        <Header>
-            <div class="flyer1">
-             <p>FREE Shipping on all orders above $50. Hurry!</p>
-            </div>
+<div class="container" id="top">  
+    <div class="skip">
+        <a href="#nav">Skip to navigation</a>
+        <a href="#main">Skip to main content</a>
+    </div>
+</div>
     
-            <nav>  
-                <a href="index.html"><img src="images/logo-small.png" alt="Touchstone Logo"></a> 
-                <ul> 
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href=contact.html>Contact</a></li>        
-                </ul>       
-                <input type=text placeholder="Search" class="search"> 
-                <i class="fa fa-search"></i>
-                <i class="fa fa-user"></i> 
-                <i class="fa fa-cart-plus"></i>
-            </nav>   
-       
-            <div class="flyer2">
-                <p>Sign-up to get deals on the upcoming Sale!</p>
-            </div>
-       
-        </Header>
+<div class="main-container">
+    <Header role="banner"> 
+        <div class="flyer1">
+            <p>FREE Shipping on all orders above $50. Hurry!</p>
+        </div>
     
- <main>
+        <nav role="navigation" id="nav">  
+            <a href="index.html"><img src="images/logo-small-130_x_130.png" alt="Touchstone Logo"></a> 
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About </a></li>
+                <li><a href=contact.html>Contact</a></li>   
+            </ul>      
+                
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <button type="submit"><i class="fa fa-cart-plus"></i></button>      
+        </nav>   
+       
+        <div class="flyer2">
+            <p>Sign-up to get deals on the upcoming Sale!</p>
+        </div>
+    </Header>
+    
+<main role="main" id="main">
 
     <div class="container">  
     <section class="contact-us" role="complementary">
@@ -143,6 +148,10 @@
     </section>
     </div>
    
+    <aside class="return-to-top" role="complementary">
+        <a href="#top" role="link"><i class="fa fa-angle-double-up"></i></a>     
+    </aside>
+
     <aside class="sign-up" role="complementary">
         <div class="sign-up-text">
             <p>Join now and enjoy exclusive offers, tips and more.</p>
@@ -166,7 +175,7 @@
             </div>
 
             <div class="need-help">
-                <a href="index.html" role="link">Customer Service</a> 
+                <a href="contact.html" role="link">Customer Service</a> 
                 <a href="contact.html"role="link">Contact Us</a> 
                 <a href="about.html" role="link">About Us</a>  
             </div>
