@@ -51,20 +51,21 @@
  <main>
 
     <div class="container">  
-    <section class="contact-us">
+    <section class="contact-us" role="complementary">
 
-        <div class="contact">
-            <h1>Contact Us</h1>
-            <p class="hotline">Call Center Hotline: 1-800-000-000</p>
+        <div class="contact" itemscope itemtype="https://schema.org/localBusiness" >
+            <h1 role="heading">Contact Us</h1>
+
+            <h2 itemprop="name">TOUCHSTONE</h2>
+            <p itemprop="telephone" class="hotline">Call Center Hotline: 1-800-000-000</p>
             <p class="hoo">Hours of Operation</p>
-            <ul>
-                <li>Mon-Fri: 7am to 10pm (CT)</li>
-                <li>Sat-Sun: 7am to 7pm (CT) </li>
-            </ul> 
+
+            <p><span itemprop="openingHours" content="Mo,Tu,We,Th,Fri 07:00-22:00">Monday-Friday 7am-10pm (CT)</span></p>
+            <p><span itemprop="openingHours" content="Sun,Sat 07:00-29:00">Saturday-Sunday 7am-7pm (CT)</span></p> 
         </div>
 
         <div class="csr-form">  
-            <h3>Customer Service Request</h3>
+            <h3 role="heading">Customer Service Request</h3>
 
             <form action="Thanks.html" method="POST">
 
@@ -94,7 +95,7 @@
     </section>
 
    
-    <section class="store-locator">
+    <section class="store-locator" role="complementary">
 
         <div class="store-locator-container">
         <p>Store Locator</p>
@@ -134,24 +135,24 @@
         </div>
     </div>
 
-        <div class="map">
+        <div class="map" role="complementary">
             <p>Map</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567606!2d-75.75712548449421!3d45.34992777909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231253704!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </section>
     </div>
-
-    <section class="sign-up">
+   
+    <aside class="sign-up" role="complementary">
         <div class="sign-up-text">
             <p>Join now and enjoy exclusive offers, tips and more.</p>
             <input type=text placeholder="email" class="email">
             <button type="submit" class="button-sign">Sign Up</button>
         </div>
-    </section>
+    </aside>
 
 
-    <section class="connect">     
+    <section class="connect" role="complementary">     
         <div class="stay-connected">
             <p>Stay Connected</p>
             <p>Need Help? 1-800-000-000</p>  
@@ -159,28 +160,27 @@
         
         <div class="help-socials-container">
             <div class="socials">
-                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> 
-                <a href="https://www.plus.google.com/"><i class="fa fa-google-plus"></i></a>
-                <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" role="link"><i class="fa fa-facebook"></i></a> 
+                <a href="https://www.plus.google.com/" role="link"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.twitter.com/" role="link"><i class="fa fa-twitter"></i></a>
             </div>
 
             <div class="need-help">
-                <a href="index.html">Customer Service</a> 
-                <a href="contact.html">Contact Us</a> 
-                <a href="about.html">About Us</a>  
+                <a href="index.html" role="link">Customer Service</a> 
+                <a href="contact.html"role="link">Contact Us</a> 
+                <a href="about.html" role="link">About Us</a>  
             </div>
         </div>      
     </section>
-   
-
 </main>
 
 
-<footer> 
+<footer role="contentinfo"> 
         <p>&copy; Copyright Touchstone Hardware, 2022.</p>
         <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p> 
          
 </footer>
+
 </div>
 </body>
 </html>

@@ -286,6 +286,7 @@ nav input{
 
 .button-sign {
     background-color: #c78c06;
+    padding: 4px 3px;
 }
 
 
@@ -337,13 +338,16 @@ nav input{
 
 .need-help a {
     border: 1px solid  #a11212;
+    padding: 3px;
     margin-bottom: 5px;
     text-decoration: none;
     color:#a11212;
     font-size: 15px;
-    font-weight: bold;
 }
 
+.need-help a:hover {
+    color:#617040;
+}
 
 /* ----- Footer ------- */
 
@@ -451,10 +455,13 @@ footer p {
     font-size: 35px;
 }
 
+.contact h2 {
+    color:#c78c06;
+}
+
 .hotline, .hoo {
     font-size: 16px;
     font-weight: bold;
-
 }
 
 .csr-form h3 {

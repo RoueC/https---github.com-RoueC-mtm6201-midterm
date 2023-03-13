@@ -45,52 +45,49 @@
    
     </Header>
 
-<main>
+<main role="main">
 
-    <section class="about-banner">
-
+    <section class="about-banner" role="complementary">
         <div class="about-banner-text">
-        <p>About Us</p>
+            <p>About Us</p>
         </div>
-
     </section>
 
     <div class="container"> 
    
-        <section class="about">
+        <section class="about" role="complementary">
         <div class="story">
-            <h3>Our Story</h3>
+            <h3 role="heading">Our Story</h3>
             <p>Touchstone is a retail hardware, tools and home improvement chain. The company was established by two farmers who had a hard time finding specific parts every time their equipment breaks down. 
             Their persistence in searching for a solution led them to brush elbows with various suppliers from other provinces, who subsequently became their business associates. They eventually sold their land to acquire a small shop and ventured in the hardware business. 
             They named their brand Touchstone, to align with their goal of becoming the stan- dard and criterion in the hardware business industry. The first store was built 4 years ago in a small town in Ontario, and it has since grown to 5 stores across the province.
             </p>
 
-            <h3>Vision</h3>
+            <h3 role="heading">Vision</h3>
             <p>Hardware need not be hard. At Touchstone, we strive to provide customers with easy-to-use, affordable solutions for their hardware, home improvement, and DIY needs. We strive to be the go-to brand that customers trust and rely on for high-quality products and exceptional customer service.</p>
                 
-            <h3>Mission</h3>
+            <h3 role="heading">Mission</h3>
             <p>We make fixing fun. Our mission is to empower homeowners to achieve their creative and productivity goals by pro- viding high-quality tools and resources that are easy to use and affordable. We strive to be a trust- ed partner that our customers can rely on for practical solutions and exceptional service.</p>
         </div>
     
           
-        <h2>Our Team</h2>
+        <h2 role="heading">Our Team</h2>
         <div class="our-team">
           
-            <div class="william">
+            <div class="william" role="img" aria-label="photo of william dupre">
                 <picture>
                     <source srcset="images/william-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/william.jpg" alt="photo of william dupre" class="william-image">
+                    <img src="images/william.jpg" alt="photo of william dupre" role="presentation" class="william-image">
                 </picture>
 
                     <p class="william-font">William Dupre</p>
-                    <p>Founder and Chief Executive Officer</p>
-                           
+                    <p>Founder and Chief Executive Officer</p>                  
             </div>
                     
-            <div class="larissa">
+            <div class="larissa" role="img" aria-label="photo of larissa evans">
                 <picture>
                     <source srcset="images/larissa-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/larissa.jpg" alt="photo of larissa evans" class="larissa-image">
+                    <img src="images/larissa.jpg" alt="photo of larissa evans" role="presentation" class="larissa-image">
                 </picture>
 
                     <p class="larissa-font">Larissa Evans</h4>
@@ -98,39 +95,39 @@
                     
             </div>
 
-             <div class="kelly">
+             <div class="kelly" role="img" aria-label="photo of kelly knowles">
                 <picture>
                     <source srcset="images/kelly-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/kelly.jpg" alt="photo of kelly knowles" class="kelly-image">
+                    <img src="images/kelly.jpg" alt="photo of kelly knowles"  role="presentation" class="kelly-image">
                  </picture>
 
                     <p class="kelly-font">Kelly Knowles</p>
                     <p>Vice President - Finance and IT</p>   
             </div>
 
-            <div class="emil">
+            <div class="emil" role="img" aria-label="photo of emil roy">
                 <picture>
                     <source srcset="images/emil-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/emil.jpg" alt="photo of emil roy" class="emil-image">
+                    <img src="images/emil.jpg" alt="photo of emil roy"  role="presentation" class="emil-image">
                 </picture>
 
                     <p class="emil-font">Emil Roy</p>
                     <p>Vice President - Stores and Merchandising</p>     
             </div>
-        </div>
+         </div>
         </section>
     </div>
 
-    <section class="sign-up">
+    <aside class="sign-up" role="complementary">
         <div class="sign-up-text">
             <p>Join now and enjoy exclusive offers, tips and more.</p>
             <input type=text placeholder="email" class="email">
             <button type="submit" class="button-sign">Sign Up</button>
         </div>
-    </section>
+    </aside>
 
 
-    <section class="connect">     
+    <section class="connect" role="complementary">     
         <div class="stay-connected">
             <p>Stay Connected</p>
             <p>Need Help? 1-800-000-000</p>  
@@ -138,22 +135,21 @@
         
         <div class="help-socials-container">
             <div class="socials">
-                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> 
-                <a href="https://www.plus.google.com/"><i class="fa fa-google-plus"></i></a>
-                <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"role="link"><i class="fa fa-facebook"></i></a> 
+                <a href="https://www.plus.google.com/"role="link"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.twitter.com/"role="link"><i class="fa fa-twitter"></i></a>
             </div>
 
             <div class="need-help">
-                <a href="index.html">Customer Service</a> 
-                <a href="contact.html">Contact Us</a> 
-                <a href="about.html">About Us</a>  
+                <a href="index.html"role="link">Customer Service</a> 
+                <a href="contact.html"role="link">Contact Us</a> 
+                <a href="about.html"role="link">About Us</a>  
             </div>
         </div>      
     </section>
-
   </main>
 
-<footer> 
+<footer role="contentinfo"> 
         <p>&copy; Copyright Touchstone Hardware, 2022 </p>
         <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p> 
         </footer> 

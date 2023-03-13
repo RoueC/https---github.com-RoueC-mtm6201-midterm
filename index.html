@@ -21,12 +21,12 @@
 <body>
 
 <div class="main-container">
-    <Header>
+    <Header role="banner"> 
         <div class="flyer1">
          <p>FREE Shipping on all orders above $50. Hurry!</p>
         </div>
 
-        <nav>  
+        <nav role="navigation">  
             <a href="index.html"><img src="images/logo-small.png" alt="Touchstone Logo"></a> 
             <ul> 
                 <li><a href="index.html">Home</a></li>
@@ -42,142 +42,138 @@
         <div class="flyer2">
             <p>Sign-up to get deals on the upcoming Sale!</p>
         </div>
-   
     </Header>
 
-<main>
+<main role="main">
     <section class="main-banner">
-
         <div class="banner-text">
         <p>Hardware need not be hard </p>
-        <a href="about.html" class="button-learn">Learn More</a>
+        <a href="about.html" class="button-learn" role="link">Learn More</a>
         </div>
-
     </section>
 
     <div class="container">
-     <h1 class="header1">HOT DEALS</h1>
-    <section class="deals">
+        <h1 class="header1"role="heading">HOT DEALS</h1>
+        <section class="deals" role="complementary">
      
-            <div class="deal1">
+            <div class="deal1"role="image" aria-label="person holding red balloon">
                 <picture>
                     <source srcset="images/deal1-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/deal1-800x700-desktop.jpg" alt="person holding red balloon" class="deal1-image">
+                    <img src="images/deal1-800x700-desktop.jpg" alt="person holding red balloon" role="presentation" class="deal1-image">
                 </picture>
                 
                 <div class="deal1-text">
                     <p>30-50% off selected items!</p>
-                    <a href="#" class="button-shop">Shop Now</a> 
+                    <a href="#" class="button-shop" role="link">Shop Now</a> 
                 </div>
             </div>
 
-            <div class="deal2">
+            <div class="deal2"role="image" aria-label="black and red sales tag">
                 <picture>
                     <source srcset="images/deal2-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/deal2-800x700-desktop.jpg" alt="black and red sales tag" class="deal2-image">
+                    <img src="images/deal2-800x700-desktop.jpg" alt="black and red sales tag" role="presentation" class="deal2-image">
                 </picture>
                 
                 <div class="deal2-text">
                     <p>Up to 70% off on holiday deals</p>
-                    <a href="#" class="button-shop">Shop Now</a> 
+                    <a href="#" class="button-shop" role="link">Shop Now</a> 
                 </div>
             </div>
 
-            <div class="deal3">
+            <div class="deal3"role="image" aria-label="silver bolt and nut">
                 <picture>
                     <source srcset="images/deal3-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/deal3-800x700-desktop.jpg" alt="silver bolt and nut" class="deal3-image">
+                    <img src="images/deal3-800x700-desktop.jpg" alt="silver bolt and nut" role="presentation" class="deal3-image">
                 </picture>
 
                 <div class="deal3-text">
                     <p>Nuts and Botls Giveaway</p>
-                    <a href="#" class="button-shop">Shop Now</a> 
+                    <a href="#" class="button-shop" role="link">Shop Now</a> 
                 </div>
             </div>
 
-            <div class="deal4">
+            <div class="deal4" role="image" aria-label="person holding yellow drill">
                 <picture>
                     <source srcset="images/deal4-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/deal4-800x700-desktop.jpg" alt="yellow drill" class="deal4-image">
+                    <img src="images/deal4-800x700-desktop.jpg" alt="person holding yellow drill" role="presentation" class="deal4-image">
                 </picture>
                 
                 <div class="deal4-text">
                     <p>Big discounts on power tools</p>
-                    <a href="#" class="button-shop">Shop Now</a> 
+                    <a href="#" class="button-shop" role="link">Shop Now</a> 
                 </div>
 
             </div>        
-    </section>
+        </section>
  
-                <a href="#" class="button-shopall1">Shop All Deals</a> 
+                <a href="#" class="button-shopall1" role="link">Shop All Deals</a> 
           
 
-        <h1 class="header2">SHOP BY CATEGORY</h1>
-    <section class="category">
-        
-            <div class="tools">
-                <picture>
-                    <source srcset="images/tools-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/tools-800x700-desktop.jpg" alt="mutiple hardware tools" class="tools-image">
-                </picture>
-               
-               
-                <div class="tools-text">
-                    <p>TOOLS</p>
-                    <a href="#" class="button-shop">Shop Now</a> 
-                </div>
-            </div>
+                <h1 class="header2" role="heading">SHOP BY CATEGORY</h1>
 
-            <div class="plumbing">
-                <picture>
-                    <source srcset="images/plumbing-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/plumbing-800x700-desktop.jpg" alt="water pipes" class="plumbing-image">
-                </picture>
+    <section class="category" role="complementary">
+        <div class="tools"role="image" aria-label="mutiple hardware tools">
+            <picture>
+                <source srcset="images/tools-500x500-mobile.jpg" media="(max-width:720px)"/>
+                <img src="images/tools-800x700-desktop.jpg" alt="mutiple hardware tools" role="presentation" class="tools-image">
+            </picture>
+                              
+            <div class="tools-text">
+                <p>TOOLS</p>
+                <a href="#" class="button-shop" role="link">Shop Now</a> 
+            </div>
+        </div>
+
+        <div class="plumbing" role="image" aria-label="water pipes">
+            <picture>
+                <source srcset="images/plumbing-500x500-mobile.jpg" media="(max-width:720px)"/>
+                <img src="images/plumbing-800x700-desktop.jpg" alt="water pipes" role="presentation" class="plumbing-image">
+            </picture>
                 
-                <div class="plumbing-text">
-                    <p>PLUMBING</p>
-                    <a href="#" class="button-shop">Shop Now</a> 
-                 </div>
+            <div class="plumbing-text">
+                <p>PLUMBING</p>
+                <a href="#" class="button-shop" role="link">Shop Now</a> 
             </div>
+        </div>
 
-            <div class="lighting">
-                <picture>
-                    <source srcset="images/lighting-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/lighting-800x700-desktop.jpg" alt="light bulbs" class="lighting-image">
-                </picture>
+        <div class="lighting" role="image" aria-label="light bulbs">
+            <picture>
+                <source srcset="images/lighting-500x500-mobile.jpg" media="(max-width:720px)"/>
+                <img src="images/lighting-800x700-desktop.jpg" alt="light bulbs" role="presentation" class="lighting-image">
+            </picture>
 
-                <div class="lighting-text">
-                    <p>LIGHTING</p>
-                    <a href="#" class="button-shop">Shop Now</a> 
-                </div>
+            <div class="lighting-text">
+                <p>LIGHTING</p>
+                <a href="#" class="button-shop" role="link">Shop Now</a> 
             </div>
+        </div>
 
-            <div class="paint">
-                <picture>
-                    <source srcset="images/paint-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/paint-800x700-desktop.jpg" alt="coloful paint" class="paint-image">
-                </picture>
+        <div class="paint" role="image" aria-label="coloful paint">
+            <picture>
+                <source srcset="images/paint-500x500-mobile.jpg" media="(max-width:720px)"/>
+                <img src="images/paint-800x700-desktop.jpg" alt="coloful paint" role="presentation" class="paint-image">
+            </picture>
                 
-                <div class="painting-text">
-                    <p>PAINT</p>
-                    <a href="#" class="button-shop">Shop Now</a> 
-                </div>
+            <div class="painting-text">
+                <p>PAINT</p>
+                <a href="#" class="button-shop" role="link">Shop Now</a> 
             </div>
+        </div>
     </section>
-                <a href="#" class="button-shopall2">Shop All Categories</a> 
+                <a href="#" class="button-shopall2" role="link">Shop All Categories</a> 
             
     </div>
 
-    <section class="sign-up">
+    <aside class="sign-up" role="complementary">
         <div class="sign-up-text">
             <p>Join now and enjoy exclusive offers, tips and more.</p>
             <input type=text placeholder="email" class="email">
             <button type="submit" class="button-sign">Sign Up</button>
         </div>
-    </section>
+    </aside>
 
 
-    <section class="connect">     
+    <section class="connect" role="complementary">     
         <div class="stay-connected">
             <p>Stay Connected</p>
             <p>Need Help? 1-800-000-000</p>  
@@ -185,23 +181,22 @@
         
         <div class="help-socials-container">
             <div class="socials">
-                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a> 
-                <a href="https://www.plus.google.com/"><i class="fa fa-google-plus"></i></a>
-                <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" role="link"><i class="fa fa-facebook"></i></a> 
+                <a href="https://www.plus.google.com/" role="link"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.twitter.com/" role="link"><i class="fa fa-twitter"></i></a>
             </div>
 
             <div class="need-help">
-                <a href="index.html">Customer Service</a> 
-                <a href="contact.html">Contact Us</a> 
-                <a href="about.html">About Us</a>  
+                <a href="index.html" role="link">Customer Service</a> 
+                <a href="contact.html" role="link">Contact Us</a> 
+                <a href="about.html" role="link">About Us</a>  
             </div>
         </div>      
     </section>
-
 </main>
 
 
-<footer> 
+<footer role="contentinfo"> 
         <p>&copy; Copyright Touchstone Hardware, 2022.</p>
         <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p> 
          
