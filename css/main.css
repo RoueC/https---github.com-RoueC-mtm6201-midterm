@@ -113,21 +113,7 @@ font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 12px;
     font-weight:bold;
-    color:#a11212    
-}
-
-
-.flyer1 {
-    animation: move 7s infinite linear;
-}
-
-@keyframes move {
- 0% {
-    transform: translateX(-160px);
-  }
-  100% {
-    transform: translateX(200px);
-  }
+    color:#a11212  ;
 }
 
 nav {
@@ -249,18 +235,8 @@ nav button {
     transform: scale(.9);
 }
 
-/* ----- Shop Now/Shop All Buttons ------- */
+/* ----- Shop Now Buttons ------- */
 
-.button-shopall1, .button-shopall2 {
-    border: 1px solid ;
-    font-size: 13px;
-    color:#a11212;
-    font-weight: bold;
-    text-align: center;
-    text-decoration:none;
-    padding: 5px;
-    border-radius: 4px;    
-}
 
 .button-shop {
     text-decoration: none;
@@ -276,10 +252,10 @@ nav button {
 
 @keyframes glowing {
     0%, 100% {
-      box-shadow: 0 0 10px red;
+      box-shadow: 0 0 5px red;
     }
     50% {  
-      box-shadow: 0 0 80px darkred;
+      box-shadow: 0 0 50px darkred;
     }
   }
 
@@ -606,6 +582,20 @@ input {
     font-size: 14px;
 }
 
+.flyer1 {
+    animation: move 5s infinite linear;
+}
+
+@keyframes move {
+ 0% {
+    transform: translateX(-160px);
+  }
+  100% {
+    transform: translateX(150px);
+  }
+}  
+
+
 nav {
     border: 1px solid;
     background-color:#a11212;  
@@ -682,13 +672,6 @@ nav button {
     font-size: 15px;
 }
 
-
-/* ----- Shop Now/Shop All Buttons ------- */
-
-.button-shopall1, .button-shopall2 {
-    font-size: 17px;
-    padding: 5px;
-}
 
 
 /* ----- Shop by Category ------- */
@@ -838,8 +821,7 @@ input {
 
 .store-locator h3 {
     padding-bottom: 20px;
-    color:#a11212;
-    background-color: none; 
+    color:#a11212; 
 }
 
 .store-locator-container{

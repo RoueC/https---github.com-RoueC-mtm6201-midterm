@@ -18,14 +18,13 @@
 
     <title>Touchstone</title>
 </head>
-<body>
 
-<div class="container" id="top">  
-    <div class="skip">
+<body>
+    <div class="skip" id="top">
         <a href="#nav">Skip to navigation</a>
         <a href="#main">Skip to main content</a>
     </div>
-</div>
+
 
 <div class="main-container">
     <Header role="banner"> 
@@ -52,21 +51,21 @@
     </Header>
 
 <main role="main" id=main>
-    <section class="main-banner">
+    <div class="main-banner">
         <div class="banner-text">
         <p>Hardware need not be hard </p>
         <a href="about.html" class="button-learn" role="link">Learn More</a>
         </div>
-    </section>
+    </div>
 
     <div class="container">
-        <h1 class="header1"role="heading">HOT DEALS</h1>
-        <section class="deals" role="complementary">
+        <h1 class="header1" role="heading">HOT DEALS</h1>
+        <div class="deals">
      
-            <div class="deal1"role="image" aria-label="person holding red balloon">
+            <div class="deal1" role="img" aria-label="person holding red balloon">
                 <picture>
-                    <source srcset="images/deal1-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/deal1-800x700-desktop.jpg" alt="person holding red balloon" role="presentation" class="deal1-image">
+                    <source srcset="images/deal1-500x500-mobile.jpg" media="(max-width:720px)">
+                    <img src="images/deal1-800x700-desktop.jpg" alt="person holding red balloon" class="deal1-image">
                 </picture>
                 
                 <div class="deal1-text">
@@ -75,10 +74,10 @@
                 </div>
             </div>
 
-            <div class="deal2"role="image" aria-label="black and red sales tag">
+            <div class="deal2" role="img" aria-label="black and red sales tag">
                 <picture>
-                    <source srcset="images/deal2-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/deal2-800x700-desktop.jpg" alt="black and red sales tag" role="presentation" class="deal2-image">
+                    <source srcset="images/deal2-500x500-mobile.jpg" media="(max-width:720px)">
+                    <img src="images/deal2-800x700-desktop.jpg" alt="black and red sales tag" class="deal2-image">
                 </picture>
                 
                 <div class="deal2-text">
@@ -87,10 +86,10 @@
                 </div>
             </div>
 
-            <div class="deal3"role="image" aria-label="silver bolt and nut">
+            <div class="deal3" role="img" aria-label="silver bolt and nut">
                 <picture>
-                    <source srcset="images/deal3-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/deal3-800x700-desktop.jpg" alt="silver bolt and nut" role="presentation" class="deal3-image">
+                    <source srcset="images/deal3-500x500-mobile.jpg" media="(max-width:720px)">
+                    <img src="images/deal3-800x700-desktop.jpg" alt="silver bolt and nut" class="deal3-image">
                 </picture>
 
                 <div class="deal3-text">
@@ -99,10 +98,10 @@
                 </div>
             </div>
 
-            <div class="deal4" role="image" aria-label="person holding yellow drill">
+            <div class="deal4" role="img" aria-label="person holding yellow drill">
                 <picture>
-                    <source srcset="images/deal4-500x500-mobile.jpg" media="(max-width:720px)"/>
-                    <img src="images/deal4-800x700-desktop.jpg" alt="person holding yellow drill" role="presentation" class="deal4-image">
+                    <source srcset="images/deal4-500x500-mobile.jpg" media="(max-width:720px)">
+                    <img src="images/deal4-800x700-desktop.jpg" alt="person holding yellow drill" class="deal4-image">
                 </picture>
                 
                 <div class="deal4-text">
@@ -111,18 +110,16 @@
                 </div>
 
             </div>        
-        </section>
- 
-                <!-- <a href="#" class="button-shopall1" role="link">Shop All Deals</a>  -->
+        </div>
           
 
                 <h1 class="header2" role="heading">SHOP BY CATEGORY</h1>
 
-    <section class="category" role="complementary">
-        <div class="tools"role="image" aria-label="mutiple hardware tools">
+    <div class="category">
+        <div class="tools" role="img" aria-label="mutiple hardware tools">
             <picture>
-                <source srcset="images/tools-500x500-mobile.jpg" media="(max-width:720px)"/>
-                <img src="images/tools-800x700-desktop.jpg" alt="mutiple hardware tools" role="presentation" class="tools-image">
+                <source srcset="images/tools-500x500-mobile.jpg" media="(max-width:720px)">
+                <img src="images/tools-800x700-desktop.jpg" alt="mutiple hardware tools" class="tools-image">
             </picture>
                               
             <div class="tools-text">
@@ -131,10 +128,10 @@
             </div>
         </div>
 
-        <div class="plumbing" role="image" aria-label="water pipes">
+        <div class="plumbing" role="img" aria-label="water pipes">
             <picture>
-                <source srcset="images/plumbing-500x500-mobile.jpg" media="(max-width:720px)"/>
-                <img src="images/plumbing-800x700-desktop.jpg" alt="water pipes" role="presentation" class="plumbing-image">
+                <source srcset="images/plumbing-500x500-mobile.jpg" media="(max-width:720px)">
+                <img src="images/plumbing-800x700-desktop.jpg" alt="water pipes" class="plumbing-image">
             </picture>
                 
             <div class="plumbing-text">
@@ -143,10 +140,10 @@
             </div>
         </div>
 
-        <div class="lighting" role="image" aria-label="light bulbs">
+        <div class="lighting" role="img" aria-label="light bulbs">
             <picture>
-                <source srcset="images/lighting-500x500-mobile.jpg" media="(max-width:720px)"/>
-                <img src="images/lighting-800x700-desktop.jpg" alt="light bulbs" role="presentation" class="lighting-image">
+                <source srcset="images/lighting-500x500-mobile.jpg" media="(max-width:720px)">
+                <img src="images/lighting-800x700-desktop.jpg" alt="light bulbs" class="lighting-image">
             </picture>
 
             <div class="lighting-text">
@@ -155,10 +152,10 @@
             </div>
         </div>
 
-        <div class="paint" role="image" aria-label="coloful paint">
+        <div class="paint" role="img" aria-label="coloful paint">
             <picture>
-                <source srcset="images/paint-500x500-mobile.jpg" media="(max-width:720px)"/>
-                <img src="images/paint-800x700-desktop.jpg" alt="coloful paint" role="presentation" class="paint-image">
+                <source srcset="images/paint-500x500-mobile.jpg" media="(max-width:720px)">
+                <img src="images/paint-800x700-desktop.jpg" alt="coloful paint" class="paint-image">
             </picture>
                 
             <div class="painting-text">
@@ -166,9 +163,7 @@
                 <a href="#" class="button-shop" role="link">Shop Now</a> 
             </div>
         </div>
-    </section>
-            
-            <!-- <a href="#" class="button-shopall2" role="link">Shop All Categories</a>        -->
+    </div>        
     </div>
 
 
@@ -186,7 +181,7 @@
     </aside>
 
 
-    <section class="connect" role="complementary">     
+    <div class="connect">     
         <div class="stay-connected">
             <p>Stay Connected</p>
             <p>Need Help? 1-800-000-000</p>  
@@ -205,15 +200,14 @@
                 <a href="about.html" role="link">About Us</a>  
             </div>
         </div>      
-    </section>
+    </div>
 </main>
 
-
 <footer role="contentinfo" id="footer"> 
-        <p>&copy; Copyright Touchstone Hardware, 2022.</p>
-        <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p> 
-         
+    <p>&copy; Copyright Touchstone Hardware, 2022.</p>
+    <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p>         
 </footer>
+
 </div>
 
 </body>
