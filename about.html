@@ -20,19 +20,26 @@
 </head>
 
 <body>
+
+    <!-- Used skip class to define skip links. Added id tag for return to top function -->
     <div class="skip" id="top">
         <a href="#nav">Skip to navigation</a>
         <a href="#main">Skip to main content</a>
     </div>
 
-
+<!-- main-container holds all universal styling of the header till footer for the home,about, and contact pages.  -->
 <div class="main-container">
-    <Header role="banner"> 
+    
+    <!-- Header holds navigation and advertisement elements. Two divs used to hold flyer styling. -->
+    <Header role="banner">  
         <div class="flyer1">
          <p>FREE Shipping on all orders above $50. Hurry!</p>
         </div>
-
+    
+        <!-- id nav is added to access navigation via skip links. 
+        navigation is created using list, input, and button elements-->
         <nav role="navigation" id="nav">  
+            <!-- An a tag is linked to the logo to allow return to home when clicked -->
             <a href="index.html"><img src="images/logo-small-130_x_130.png" alt="Touchstone Logo"></a> 
             <ul> 
                 <li><a href="index.html">Home</a></li>
@@ -50,14 +57,16 @@
         </div>
     </Header>
 
-<main role="main" id="main">
 
+<main role="main" id="main"> <!-- Used id main to to access main contents of the page via skip links. -->
+
+    <!-- about-banner holds text of main banner for the about page -->
     <div class="about-banner">
         <div class="about-banner-text">
             <p>About Us</p>
         </div>
-    </div>
-
+    </div> 
+    <!-- Used container class to hold styling for elements of our story, vision, mission and our team. -->
     <div class="container"> 
    
         <section class="about" role="complementary">
@@ -75,7 +84,8 @@
             <p>We make fixing fun. Our mission is to empower homeowners to achieve their creative and productivity goals by pro- viding high-quality tools and resources that are easy to use and affordable. We strive to be a trust- ed partner that our customers can rely on for practical solutions and exceptional service.</p>
         </div>
     
-          
+        <!--Multiple classes used to define and style elements of our team using grid. 
+            Added picture and source elements to optimize images for small and large screens  -->
         <h2 role="heading">Our Team</h2>
         <div class="our-team">
           
@@ -122,11 +132,12 @@
          </div>
         </section>
     </div>
-
+    <!-- Used return to top option using id tag #top for ease of navigation.  -->
     <aside class="return-to-top" role="complementary">
         <a href="#top" role="link"><i class="fa fa-angle-double-up"></i></a>     
     </aside>
 
+    <!-- sign-up class holds elements for newsletter subscription  -->
     <aside class="sign-up" role="complementary">
         <div class="sign-up-text">
             <p>Join now and enjoy exclusive offers, tips and more.</p>
@@ -135,7 +146,8 @@
         </div>
     </aside>
 
-
+    <!-- connect class contains social media information and help links that redirect to contact and about page.
+     subclasses used to display items using flex -->
     <div class="connect">     
         <div class="stay-connected">
             <p>Stay Connected</p>
@@ -158,6 +170,7 @@
     </div>
   </main>
 
+<!-- footer holds the copyright line and citation for images used  in the page-->
 <footer role="contentinfo"> 
     <p>&copy; Copyright Touchstone Hardware, 2022 </p>
     <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p> 

@@ -20,19 +20,26 @@
 </head>
 
 <body>
+
+     <!-- Used skip class to define skip links. Added id tag for return to top function -->
     <div class="skip" id="top">
         <a href="#nav">Skip to navigation</a>
         <a href="#main">Skip to main content</a>
     </div>
 
-
+<!-- main-container holds all universal styling of the header till footer for the home,about, and contact pages.  -->
 <div class="main-container">
+    
+    <!-- Header holds navigation and advertisement elements. Two divs used to hold flyer styling. -->
     <Header role="banner"> 
         <div class="flyer1">
          <p>FREE Shipping on all orders above $50. Hurry!</p>
         </div>
 
+        <!-- id nav is added to access navigation via skip links. 
+            navigation is created using list, input, and button elements.-->
         <nav role="navigation" id="nav">  
+           <!-- An a tag is linked to the logo to allow return to home when clicked. --> 
            <a href="index.html"><img src="images/logo-small-130_x_130.png" alt="Touchstone Logo"></a> 
             <ul> 
                 <li><a href="index.html">Home</a></li>
@@ -50,7 +57,10 @@
         </div>
     </Header>
 
-<main role="main" id=main>
+       
+<main role="main" id="main">  <!-- Used id main to to access main contents of the page via skip links. -->
+
+    <!-- main-banner holds text of main banner for the home page. learn more button redirects to about page -->
     <div class="main-banner">
         <div class="banner-text">
         <p>Hardware need not be hard </p>
@@ -58,10 +68,13 @@
         </div>
     </div>
 
+    <!-- Used container class to hold styling for elements of hot deals and shop by category -->
     <div class="container">
         <h1 class="header1" role="heading">HOT DEALS</h1>
         <div class="deals">
-     
+            
+            <!-- Used several subclasses to define elements of hot deals and shop category, and display items 
+            in grid layout. Added picture and source elements to optimize images for small and large screens.  -->
             <div class="deal1" role="img" aria-label="person holding red balloon">
                 <picture>
                     <source srcset="images/deal1-500x500-mobile.jpg" media="(max-width:720px)">
@@ -166,12 +179,12 @@
     </div>        
     </div>
 
-
+   <!-- Used return to top option using id tag #top for ease of navigation.  -->
     <aside class="return-to-top" role="complementary">
         <a href="#top" role="link"><i class="fa fa-angle-double-up"></i></a>     
     </aside>
 
-    
+     <!-- sign-up class holds elements for newsletter subscription  -->
     <aside class="sign-up" role="complementary">
         <div class="sign-up-text">
             <p>Join now and enjoy exclusive offers, tips and more.</p>
@@ -180,7 +193,8 @@
         </div>
     </aside>
 
-
+    <!-- connect class contains social media information and help links that redirect to contact and about page.
+     subclasses used to display items using flex -->
     <div class="connect">     
         <div class="stay-connected">
             <p>Stay Connected</p>
@@ -203,6 +217,7 @@
     </div>
 </main>
 
+<!-- footer holds the copyright line and citation for images used in the page-->
 <footer role="contentinfo" id="footer"> 
     <p>&copy; Copyright Touchstone Hardware, 2022.</p>
     <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p>         

@@ -21,17 +21,23 @@
 
 <body>
 
+    <!-- Used skip class to define skip links. Added id tag for return to top function -->
     <div class="skip" id="top">
         <a href="#nav">Skip to navigation</a>
         <a href="#main">Skip to main content</a>
     </div>
     
+<!-- main-container holds all universal styling of the header till footer for the home,about, and contact pages.  --> 
 <div class="main-container">
+    
+    <!-- Header holds navigation and advertisement elements. Two divs used to hold flyer styling. -->
     <Header role="banner"> 
         <div class="flyer1">
             <p>FREE Shipping on all orders above $50. Hurry!</p>
         </div>
     
+         <!-- id nav is added to access navigation via skip links. 
+            navigation is created using list, input, and button elements.-->
         <nav role="navigation" id="nav">  
             <a href="index.html"><img src="images/logo-small-130_x_130.png" alt="Touchstone Logo"></a> 
             <ul> 
@@ -50,10 +56,12 @@
         </div>
     </Header>
     
-<main role="main" id="main">
+<main role="main" id="main"> <!-- Used id main to to access main contents of the page via skip links. -->
 
-    <div class="container">  
-    <section class="contact-us" role="complementary">
+    <div class="container">  <!-- Used container class to hold contact us styling for 
+        elements of cust service form, store locator, and map. -->
+
+    <section class="contact-us" role="complementary"> 
 
         <div class="contact" itemscope itemtype="https://schema.org/localBusiness" >
             <h1 role="heading">Contact Us</h1>
@@ -96,8 +104,8 @@
         </div>  
     </section>
 
-   
-    <div class="store-locator">
+    <!-- Subclasses created for store locator and map to define styling and allow grid layout in large screen. -->
+    <div class="store-locator"> 
 
         <div class="store-locator-container">
         <p>Store Locator</p>
@@ -135,20 +143,22 @@
                 <li itemprop="phone">Phone: 6613- 123 -4567</li>
             </ul>
         </div>
-    </div>
+        </div>
 
+        <!-- Used iframe to display map -->
         <div class="map" role="complementary">
             <p>Map</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567606!2d-75.75712548449421!3d45.34992777909979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669231253704!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
     </div>
     </div>
    
+    <!-- Used return to top option using id tag #top for ease of navigation.  -->
     <aside class="return-to-top" role="complementary">
         <a href="#top" role="link"><i class="fa fa-angle-double-up"></i></a>     
     </aside>
 
+    <!-- sign-up class holds elements for newsletter subscription  -->
     <aside class="sign-up" role="complementary">
         <div class="sign-up-text">
             <p>Join now and enjoy exclusive offers, tips and more.</p>
@@ -157,7 +167,8 @@
         </div>
     </aside>
 
-
+    <!-- connect class contains social media information and help links that redirect to contact and about page.
+    subclasses used to display items using flex -->
     <div class="connect">     
         <div class="stay-connected">
             <p>Stay Connected</p>
@@ -180,7 +191,7 @@
     </div>
 </main>
 
-
+<!-- footer holds the copyright line and citation for images used  in the page-->
 <footer role="contentinfo"> 
     <p>&copy; Copyright Touchstone Hardware, 2022.</p>
     <p>All images taken from <a href=https://www.pexels.com>Pexels.</a></p>          

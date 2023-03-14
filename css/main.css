@@ -43,7 +43,7 @@ background-color:#EDEBE8;
 font-family: 'Roboto', sans-serif;
 }
 
-
+/* universal styling for all pages. min-width and max-width defined. */
 .main-container {
     display: block;
     min-width:340px;
@@ -52,13 +52,17 @@ font-family: 'Roboto', sans-serif;
     line-height: 1.2;
 }
 
+/* added spacing for the body of each page to provide emphasis on the contents */
 .container {
     padding: 0 3rem 0 2.5rem;   
 }
 
 
-/* ----- Skip Link/Return to Top ------- */
+/* ----- Skip Link/Focus state/Return to Top ------- */
 
+/* used flex layout to display skip link items and defined top and position element to hide skip links menu. */
+/* added focus state on links to aid users who are using a keyboard, and to make it easy for users to know which 
+link they are on. */
 .skip {
     display: flex;
     flex-direction: column;
@@ -108,6 +112,9 @@ font-family: 'Roboto', sans-serif;
 
 
 /* ----- Navigation/Header ------- */
+
+/* styling for header - font, color, hover, padding,margin, and layout. 
+used flex to display nav items. */
 
 .flyer1, .flyer2{
     text-align: center;
@@ -164,6 +171,9 @@ nav button {
 
 /* ----- Banner ------- */
 
+/* styling for banner. opted to use background image for overlaying text instead of using relative 
+and absolute. added scale transform property to emphsise button on hover. */
+
 .main-banner {
     height: 400px;
     width: 100%; 
@@ -213,6 +223,9 @@ nav button {
 
 /* ----- Hot Deals ------- */
 
+/* displayed hot deal elements using grid in a 2-row and 2-column layout for small screen. 
+added transform + scale property to change size of photo on hover.*/
+
 .deals {
     padding-top: 20px;
     display: grid;
@@ -237,6 +250,8 @@ nav button {
 
 /* ----- Shop Now Buttons ------- */
 
+/* added animation to shop now buttons using animation property. 
+ used different levels of box-shadow to achieve glowing effect on hover.*/
 
 .button-shop {
     text-decoration: none;
@@ -261,6 +276,9 @@ nav button {
 
 /* ----- Shop by Category ------- */
 
+/* displayed shop by category elements using grid in a 2-row and 2-column layout for small screen. 
+added transform + scale property to change image size on hover.*/
+
 .category {
     padding-top: 30px;
     display: grid;
@@ -284,6 +302,8 @@ nav button {
 }
 
 /* ----- Email Sign-up ------- */
+
+/* styling for newsletter sign-up */
 
 .sign-up {
   background-color: #a11212;
@@ -314,6 +334,8 @@ nav button {
 
 /* ----- Connect  ------- */
 
+/* used flex layout to display items inside the stay connected class. styled social media icons
+and useful links. added opacity and color change on hover to add emphasis. */
 .stay-connected {
     display:flex;
     justify-content: space-between;
@@ -376,6 +398,8 @@ nav button {
 
 /* ----- Footer ------- */
 
+/* used flex layout to display footer items. */
+
 footer {
    display: flex;
    justify-content: center;
@@ -388,6 +412,10 @@ footer p {
 }
 
 /* ------------------------ Mobile (About) ------------------------- */
+
+/* styling about page for small screen. used background image to display banner and added
+overlay text. used grid layout to display a 2-row and 2-column layout for our team. included
+transform property to scale photos on hover */
 
 .about-banner {
     height: 400px;
@@ -465,6 +493,8 @@ footer p {
 }
 
 /* ------------------------- Mobile (Contact) -------------------------- */
+
+/* styling contact page for small screen. used iframe to display map. */
 
 .contact, .csr-form  {
     padding:20px 0;
@@ -576,6 +606,10 @@ input {
 
 /* --------------- Large Screen (Home) ------------- */
 
+/* style for large screen including change in navigation layout, alignment, and font-size. 
+added animation to flyer1 advertisement to capture user's interest. flyer text flows from left to
+right using transform translateX property.  */
+
 @media screen and (min-width:720px) { 
 
 .flyer1, .flyer2 {
@@ -631,6 +665,9 @@ nav button {
 
 /* ----- Banner ------- */
 
+/* used different image size for background image on large screen along with font and alignment
+change. */
+
 .main-banner {
     height: 600px;
     width: 100%; 
@@ -654,12 +691,16 @@ nav button {
 
 /* ----- Header Title (Shop By Category/Hot Deals) ------- */
 
+/* header title size and alignment change */
+
 .header1, .header2{
     font-size:40px;
     padding: 40px;   
 }
 
 /* ----- Hot Deals ------- */
+
+/* used grid property to display hot deal items in 1 row of 4 images. */
 
 .deals {
     padding-top: 20px;
@@ -672,9 +713,9 @@ nav button {
     font-size: 15px;
 }
 
-
-
 /* ----- Shop by Category ------- */
+
+/* used grid property to display shop by category items in 1 row of 4 images. */
 
 .category {
     padding-top: 20px;
@@ -685,13 +726,12 @@ nav button {
 
 .tools, .plumbing, .lighting, .paint {
     font-size: 15px;
-
 }
-
 
 /* ----- Email Sign-up ------- */
 
-  
+/* styling for newsletter sign-up on large screen  */
+
 .sign-up-text {
     text-align: center;
     font-size: 20px;
@@ -708,6 +748,9 @@ nav button {
 
 
 /* ----- Connect  ------- */
+
+/* used flex property to update layout of social media icons and helpful links.
+added transform property on hover to emphasise items */
 
 .stay-connected {
     padding: 10px 10px 5px 10px;
@@ -743,6 +786,8 @@ nav button {
 
 /* --------------------- Large Screen (About) ---------------------- */
 
+/* used different image size for background image on large screen along with font and alignment
+change. changed grid layout of our team to display a single row of 4 images  */
 
 .about-banner {
     height: 500px;
@@ -780,10 +825,10 @@ nav button {
     padding-top: 20px;
 }
 
-
-
-
 /* ------------------- Large Screen (Contact) ----------------------- */
+
+/* styling for contact page for large screen including size change for labels and inputs.
+used grid to put store locator and map side by side. */
 
 .contact h1 {
     padding: 45px 0;
@@ -846,6 +891,8 @@ input {
 }
 
 /* ---------------------- Large Screen (Home) ------------------------- */
+
+/* styling for navigation for screens larger than 1000px; */
 
 @media screen and (min-width:1000px) { 
         
